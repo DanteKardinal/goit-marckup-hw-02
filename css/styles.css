@@ -1,4 +1,9 @@
+    /* font-family: 'Raleway', sans-serif;
+     */
+
 :root {
+    --logo-text-font: 'Raleway';
+    --no-hover-link-color: #212121;
     --primary-text-color: ;
     --title-text-color: ;
     --accent-color: ;
@@ -6,4 +11,37 @@
 
 body{
     background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Стили шапки */
+
+/* Логотип */
+.logo {
+    font-family: var(--logo-text-font);
+}
+.logo-web {
+    color: #2196F3;
+}
+.logo-studio{
+    color: #000000;
+}
+
+/* Навигация */
+.nav-list {
+
+}
+.nav-link {
+    color: var(--no-hover-link-colorhover-link-color);
+}
+.nav-link:hover, .nav-link:focus {
+    color: #2196F3;
+}
+/* Каналы связи со студией */
+.comm-link {
+    color: #757575;
+}
+.comm-link:hover, .comm-link:focus {
+    color: #2196F3;
 }
