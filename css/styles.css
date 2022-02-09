@@ -1,47 +1,108 @@
-    /* font-family: 'Raleway', sans-serif;
+/* font-family: 'Raleway', sans-serif;
      */
 
 :root {
-    --logo-text-font: 'Raleway';
-    --no-hover-link-color: #212121;
-    --primary-text-color: ;
-    --title-text-color: ;
-    --accent-color: ;
+  --logo-text-font: 'Raleway';
+  --nohover-navlink-color: #212121;
+  --primary-text-color: #757575;
+  --communication-color: rgba(255, 255, 255, 0.6);
+  --button-text-color: #ffffff;
+  --title-text-color: ;
+  --accent-color: ;
 }
 
-body{
-    background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
 }
-
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 
 /* Стили шапки */
-
+.head-site {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
 /* Логотип */
 .logo {
-    font-family: var(--logo-text-font);
+  font-family: var(--logo-text-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
 }
 .logo-web {
-    color: #2196F3;
+  color: #2196f3;
 }
-.logo-studio{
-    color: #000000;
+.logo-studio {
+  color: #000000;
 }
-
 /* Навигация */
 .nav-list {
-
 }
 .nav-link {
-    color: var(--no-hover-link-colorhover-link-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--nohover-navlink-color);
 }
-.nav-link:hover, .nav-link:focus {
-    color: #2196F3;
+.nav-link:hover,
+.nav-link:focus {
+  color: #2196f3;
 }
 /* Каналы связи со студией */
 .comm-link {
-    color: #757575;
+  color: var(--primary-text-color);
 }
-.comm-link:hover, .comm-link:focus {
-    color: #2196F3;
+.comm-link:hover,
+.comm-link:focus {
+  color: #2196f3;
+}
+
+/* Основной контент страницы */
+/* Секция hero с заказом услуг */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: #ffffff;
+}
+.button {
+  background-color: #2196f3;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--button-text-color);
+}
+/* Секция Наши преимущества */
+
+/* Footer */
+.footer {
+  background-color: #2f303a;
+}
+.address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.footer-comm {
+  color: var(--communication-color);
 }
