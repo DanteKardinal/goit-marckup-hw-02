@@ -7,7 +7,7 @@
   --primary-text-color: #757575;
   --communication-color: rgba(255, 255, 255, 0.6);
   --button-text-color: #ffffff;
-  --title-text-color: ;
+  --title-text-color: #212121;
   --accent-color: ;
 }
 
@@ -15,12 +15,23 @@ body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  color: var(--primary-text-color);
 }
 a {
   text-decoration: none;
 }
 li {
   list-style: none;
+}
+
+/* Общие стили */
+.title-seclion {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Стили шапки */
@@ -75,6 +86,7 @@ li {
   background-color: #2f303a;
 }
 .hero-title {
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -90,6 +102,52 @@ li {
   color: var(--button-text-color);
 }
 /* Секция Наши преимущества */
+/* Cкрытый заголовко h2 */
+.dont-see {
+  color: transparent;
+  font-size: 0;
+}
+/* Основная часть секции Наши преимущества*/
+.about-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.about-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+/* Секция Чем Мы занимаемся */
+.whatwedo-titel {
+  color: var(--title-text-color);
+}
+/* Секция Наша команда */
+.ourteam-titel {
+  color: var(--title-text-color);
+}
+.ourteam-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.outrteam-prof {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
 /* Footer */
 .footer {
