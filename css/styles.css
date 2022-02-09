@@ -15,7 +15,6 @@
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
   color: var(--primary-text-color);
 }
 a {
@@ -27,17 +26,18 @@ li {
 
 /* Общие стили */
 .title-seclion {
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.button {
+  cursor: pointer;
+}
 
 /* Стили шапки */
 .head-site {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -46,7 +46,6 @@ li {
 /* Логотип */
 .logo {
   font-family: var(--logo-text-font);
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
@@ -61,7 +60,6 @@ li {
 .nav-list {
 }
 .nav-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -88,15 +86,13 @@ li {
 }
 .hero-title {
   text-transform: uppercase;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   color: #ffffff;
 }
-.button {
+.primary-button {
   background-color: #2196f3;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -110,7 +106,6 @@ li {
 }
 /* Основная часть секции Наши преимущества*/
 .about-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -119,7 +114,6 @@ li {
   color: var(--title-text-color);
 }
 .about-text {
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -133,7 +127,6 @@ li {
   color: var(--title-text-color);
 }
 .ourteam-name {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -142,7 +135,6 @@ li {
   color: var(--title-text-color);
 }
 .outrteam-prof {
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -183,7 +175,6 @@ li {
 }
 /* Секция Наши проекты */
 .ourprj-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
@@ -191,7 +182,6 @@ li {
   color: var(--title-text-color);
 }
 .ourprj-text {
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
