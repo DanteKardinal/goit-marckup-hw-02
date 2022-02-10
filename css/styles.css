@@ -9,12 +9,13 @@
   --communication-color: rgba(255, 255, 255, 0.6);
   --button-text-color: #ffffff;
   --title-text-color: #212121;
+  --primary-font: 'Roboto', sans-serif;
   --accent-color: ;
 }
 
 body {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-font);
   color: var(--primary-text-color);
 }
 a {
@@ -33,7 +34,26 @@ li {
   letter-spacing: 0.03em;
 }
 .button {
+  font-family: inherit;
   cursor: pointer;
+}
+/* Cкрытый заголовко h2 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Подсвечивание текущей страницы */
+.active-link:visited {
+  color: var(--hover-cont-link);
 }
 
 /* Стили шапки */
@@ -55,6 +75,9 @@ li {
 }
 .logo-studio {
   color: #000000;
+}
+.footer-logo-studio {
+  color: #ffffff;
 }
 /* Навигация */
 .nav-list {
@@ -99,11 +122,6 @@ li {
   color: var(--button-text-color);
 }
 /* Секция Наши преимущества */
-/* Cкрытый заголовко h2 */
-.dont-see {
-  color: transparent;
-  font-size: 0;
-}
 /* Основная часть секции Наши преимущества*/
 .about-title {
   font-weight: bold;
@@ -114,7 +132,6 @@ li {
   color: var(--title-text-color);
 }
 .about-text {
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 }
@@ -135,7 +152,6 @@ li {
   color: var(--title-text-color);
 }
 .outrteam-prof {
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -148,7 +164,6 @@ li {
 }
 .address {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
@@ -165,6 +180,11 @@ li {
 /* Основной контент страници */
 /* Навигация по проектам */
 .service-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: #f5f4fa;
 }
@@ -182,7 +202,6 @@ li {
   color: var(--title-text-color);
 }
 .ourprj-text {
-  font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
